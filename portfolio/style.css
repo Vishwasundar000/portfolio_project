@@ -1,0 +1,187 @@
+@keyframes slidetoLeft {
+
+    from{
+        transform: translateX(-200px);
+
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes btnhidden {
+    from{
+        transform: scaleX(0);
+        transition: transform 0.5s;
+        transform-origin: bottom;
+    }
+    to{
+        transform: scaleX(1);
+    }
+    
+}
+
+
+
+*{
+   margin: 0;
+   box-sizing: border-box;
+   padding: 0;
+   font-family: 'Poppins',sans-serif;
+
+}
+
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 100px;
+    width: 100%;
+    animation: slidetoLeft 1s ease-in 0s 1 normal none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+
+
+     
+
+}
+.navtitle{
+    font-size: 40px;
+    color: #fff;
+    user-select: none;
+    font-weight:200;
+    font-family: monospace;
+   
+}
+
+.navigation a{
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    width: 50px;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+
+
+}
+.navigation a::after{
+     
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background: #fff;
+    left: 0;
+    bottom: -6px;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after{
+    transform: scaleX(1);
+
+
+
+
+}
+
+
+
+.navigation button{
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border-radius: 10px;
+    color: #fff;
+    border: 2px solid white;
+    margin-left: 40px;
+    transition: .5s;
+    padding: 5px;
+}
+
+.navigation button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+body{
+    background: url("bg.png") no-repeat;
+    background-position: cover;
+}
+.container img{
+    height: 200px;
+    width: 200px;
+    margin-left: 41%;
+    border-radius: 100px;
+    margin-top: 150px;
+ 
+}
+
+.container h1{
+    color: #fff;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 70px;
+    text-align: center;
+}
+.contact{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    margin-right: 40px;
+
+  
+}
+
+.contact a{
+    text-decoration: none;
+    color: #3aea5d;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    border: 3px solid #3aea5d;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    animation: btnhidden 1s ease-in 0s 1 normal none;
+    
+
+
+
+    
+}
+
+
+.contact a:hover{
+    text-shadow:
+    0 0 20px #43e337,
+    0 0 50px rgba(33, 255, 51, 0.9),
+    0 0 75px rgba(85, 255, 33, 0.8),
+    0 0 76px rgba(41, 243, 88, 0.753),
+    0 0 77px rgba(33, 235, 255, .6),
+    0 0 78px rgba(33, 235, 255, .5),
+    0 0 79px rgba(33, 235, 255, .4),
+    0 0 80px rgba(33, 235, 255, .3),
+    0 0 85px rgba(33, 235, 255, .2),
+     0 0 99px rgba(33, 235, 255, .1);
+     font-size: 35px;
+     width: 250px;
+     transition: 0.5s;
+}
+
+.contact a::after{
+    transition: 0.10s;
+}
+.container{
+    animation: slidetoLeft 1s ease-in 0s 1 normal none;
+}
+
+
+

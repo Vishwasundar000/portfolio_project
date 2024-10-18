@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Baloo+Paaji+2:wght@400..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+@keyframes slidetoLeft {
+    from{
+        transform: translateX(-80px);
+    }
+    to{
+        transform: translateX(0);
+    }
+    
+}
+
+@keyframes slidetoRight {
+    from{
+        transform: translateX(-80px);
+
+    }
+    to{
+        transform: translateX(0);
+    }
+    
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body { background: rgb(239, 235, 200) !important; }
+
+.contact h1{
+    font-size: 100px;
+    height: 100px;
+    width: auto;
+    margin-top: 220px;
+    margin-left: 100px;
+    animation: slidetoLeft 1s ease-in 0s 1 normal none;
+
+}
+
+.contact p{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 110px;
+    animation: slidetoLeft 1s ease-in 0s 1 normal none;
+    
+    
+
+}
+.form-1{
+    margin-top: 200px;
+
+}
+.form-1 input{
+     border: 2px solid rgb(173, 172, 172);
+     text-align: center;
+     margin-top: 30px;
+     background-color: transparent;
+     font-size: 15px;
+     margin-left: 50px;
+     padding: 15px;
+     transition: 0.7s;
+     border-radius: 10px;
+}
+
+.form-1 input:hover{
+    padding: 20px;
+}
+
+.form-1 select{
+    font-size: 17px;
+    height: 30px;
+    color: rgb(173, 172, 172);
+    width: 480px;
+    margin-top: 20px;
+    margin-left: 50px;
+    background-color: transparent;
+    border: 2px solid rgb(173, 172, 172);
+    border-radius: 10px;
+}
+.msg{
+    margin-top: 20px;
+    margin-left: 50px;
+    height: 300px;
+    width: 480px;
+    border: 2px solid rgb(173, 172, 172);
+    text-align: center;
+    background-color: transparent;
+    border-radius: 10px;
+}
+.msg:hover{
+    padding: 40px;
+}
+.sub_btn{
+    margin-top: 20px; 
+    margin-left: 250px;
+    background-color: transparent;
+    font-size: 15px;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    transition: 0.5s;
+    border: 2px solid rgb(173, 172, 172);
+    color: rgb(173, 172, 172);
+
+}
+.sub_btn:hover{
+    width: 130px;
+    
+}
+.form0{
+    animation: slidetoRight 1s ease-in 0s 1 normal none;
+}
